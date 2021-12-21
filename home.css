@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    background: rgb(62, 128, 0);
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color:whitesmoke;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+nav ul li a{
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+a:hover{
+    background:rgb(80, 199, 145);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:whitesmoke;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+
+}
