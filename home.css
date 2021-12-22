@@ -1,25 +1,24 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+*{/*we are selecting all the elements*/
     padding: 0;
-    margin: 0;
+    margin: 0;/*"In CSS, a margin is the space around an element's border, while padding is the space between an element's border and the element's content. Put another way, the margin property controls the space outside an element, and the padding property controls the space inside an element.; "that's from google because I always 
+    forget the difference.*/
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
-body{
-    font-family: sans-serif;
-}
 nav{
     background: rgb(62, 128, 0);
-    height: 80px;
+    height: 80px;/*largeur de la bande de nav*/
     width: 100%;
 }
 label.logo{
     color:whitesmoke;
-    font-size: 20px;
+    font-size: 50px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
-    font-family: 'Imperial Script', cursive;
+    font-family: 'Waterfall', cursive;
 }
 nav ul{
     float: right;
@@ -28,7 +27,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 5px;/* top and bottom=0 though right and left =5*/
 }
 nav ul li a{
     color: whitesmoke;
@@ -48,7 +47,7 @@ a:hover{
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
-    display: none;
+    /*display: none;*/
 }
 #check{
     display: none;
