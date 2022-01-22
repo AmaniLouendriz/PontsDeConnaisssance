@@ -2,7 +2,7 @@
 *{/*we are selecting all the elements*/
     padding: 0;
     margin: 0;/*"In CSS, a margin is the space around an element's border, while padding is the space between an element's border and the element's content. Put another way, the margin property controls the space outside an element, and the padding property controls the space inside an element.; "that's from google because I always 
-    forget the difference.*/
+    forget the difference :) */
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -22,7 +22,7 @@ label.logo{
 }
 nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 100px;
 }
 nav ul li{
     display: inline-block;
@@ -40,59 +40,17 @@ a:hover{
     background:rgb(80, 199, 145);
     transition: .5s;
 }
-.checkbtn{
-    font-size: 30px;
-    color:beige;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    /*display: none;*/
-}
-#check{
-    display: none;
-}
-@media (max-width: 952px) {
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: rgb(129, 199, 80);
-        top: 60px;
-        left:-100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    a:hover,a.active{
-        background: none;
-        color:chartreuse;
-    }
-    #check :checked ~ ul{
-        left:0;
-    }
-}
 section{
-    background: url(Picture1.jpg) no-repeat;
+    background: url("Picture1.jpg") no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
 }
+/*.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: aliceblue;
+    margin: 5px;
+}
+/*.burger{
+    display:none;*/
+
