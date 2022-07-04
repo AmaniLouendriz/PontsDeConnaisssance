@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Centre les Ponts de la Connaissance</title>
+    <meta name="viewport" content="width=device-width" ,initial-scale="1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Waterfall&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9015fb1a02.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a class="logo" href="home.html"
+          ><img src="style/images/Logo.png" alt=""
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="home.html">Accueil</a></li>
+            <li><a href="about.html">A propos de Nous</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Activités</a></li>
+            <li><a href="#">FaQ</a></li>
+            <li><a href="contact.html">Contacter Nous</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <!-- Building the burger icon below-->
+        <!-- <i class="fa fa-bars"></i> -->
+      </nav>
+      <h1>Evénements et Activités</h1>
+    </section>
+    <!-- blog page content -->
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img
+            src="style/images/blogFirstImage.png"
+            alt="Group of teenagers smiling"
+          />
+          <h2>Fête de la fin du premier semestre!</h2>
+          <p>
+            Comme le premier semestre touchait déjà à sa fin; la direction du
+            Centre Polydisciplinaire Les Ponts De La Connaissance a eu l'immense
+            plaisir d'organiser une fête symbolique pour l'ensemble de la
+            communauté.
+          </p>
+          <br />
+          <p>
+            La fête a eu lieu le 18 Janvier 2022 de 10h à 15h00. Une
+            participation de 50 dhs avait été exigé pour couvrir quelques
+            dépenses reliées au festivités. La célébration était ouverte à tout
+            le monde sans aucune exception.
+          </p>
+          <br />
+          <p>
+            Au menu; il y avait des rassemblements amicaux entre camarades de
+            classe; puis l'ambiance a commencé à se réchauffer avec l'arrivée du
+            Monsieur Le Clown. Monsieur Ahmed a su comment captiver l'attention
+            des plus jeunes et animer la curiosités des aînés avec ses
+            mouvements tellement énérgétiques que excitants. Nos étudiantes et
+            étudiants ont eu l'énorme plaisir de jouer au son rythmé de la
+            musique et des applaudissements du public. Une compétition
+            intellectuelle avait eu lieu; et dont le but était de donner aux
+            participants l'opportunité de s'amuser tout en apprenant des choses
+            et en rafraichissant la mémoire en se rappellant des concepts déjà
+            étudiés en salle de classe!
+          </p>
+          <br />
+          <p>
+            Et comme toute fête ne va pas sans un goûter gourmand; nos
+            participantes et participants ont clôturé la célébration en
+            dégustant les friandises, biscuits et les collations offertes. A la
+            fin; tout le monde a rejoint sa demeure; la tête remplie de
+            souvenirs inoubliables; et les yeux pleins d'espoir vers un avenir
+            rayonnant.
+          </p>
+
+          <div class="comment-box">
+            <h3>Qu'en pensez vous de cet article?</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="Votre nom complet" />
+              <input
+                type="text"
+                placeholder="Votre adresse courriel
+              "
+              />
+              <textarea
+                rows="5"
+                placeholder="Votre commentaire
+              "
+              ></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Publier Le Commentaire
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Autre événements et activités</h3>
+          <div>
+            <span>Iftar Collectif</span>
+          </div>
+          <div>
+            <span>Un, deux, trois, A la piscine!</span>
+          </div>
+          <div>
+            <span>Journées Portes Ouvertes Eté 2022</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>A propos de nous</h4>
+      <p>
+        Nous sommes une équipe passionnée par l'enseignement et l'éducation.
+        <br />
+        Notre première priorité est d'aider nos clientes et clients à surmonter
+        leurs problèmes.
+        <br />
+        Le tout avait commencé à partir d'une classe de 2 élèves et une
+        professeures de français. Maintenant, nou servons plus de 100 étudiants
+        de tous les niveaux.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Tous droits respectés</p>
+    </section>
+
+    <!-- javascript for toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
