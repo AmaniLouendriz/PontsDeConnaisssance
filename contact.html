@@ -56,36 +56,59 @@
 
     <section class="contact-us">
       <div class="row">
-        <div class="contact-col">
-          <div>
+        <div class="info-col">
+          <div class="adress">
             <i class="fa fa-home"></i>
             <span>
               <h5>79 Avenue Hassan Chakour</h5>
-              <p>Tétouan, Maroc </p>
+              <p>Tétouan, Maroc</p>
             </span>
-            <div>
+            <!-- added this end of div myself -->
+          </div>
+          <div class="phone">
             <i class="fa fa-phone"></i>
             <span>
               <h5>+212 62 600 7001</h5>
               <p>Du Lundi au Vendredi, de 17h00 à 22h00</p>
             </span>
           </div>
-          <div>
+          <div class="email">
             <i class="fa fa-envelope-o"></i>
             <span>
               <h5>lespontsdelaconnaissance2020@gmail.com</h5>
-              <p>Envoyer nous un courriel!</p>
+              <!-- <h3>Envoyer nous un courriel!</h3> -->
             </span>
           </div>
         </div>
         <div class="contact-col">
+          <h3>Envoyer nous un courriel!</h3>
           <form action="form-handler.php" method="post">
-            <input type="text" name="name" placeholder="Votre nom complet" required>
-            <input type="email" name="email" placeholder="Votre adresse courriel" required>
-            <input type="text" name="subject" placeholder="Le sujet de votre demande" required>
-            <textarea rows="8" name="message" placeholder="Message" required></textarea>
-            <button type="submit" class="hero-btn red-btn">Envoyer le message</button>
-
+            <h5>Nom complet</h5>
+            <input
+              type="text"
+              name="name"
+              placeholder="Ecrivez votre nom ici"
+              required
+            />
+            <h5>Votre Adresse courriel</h5>
+            <input
+              type="email"
+              name="email"
+              placeholder="email@email.com"
+              required
+            />
+            <h5>Le sujet de votre demande</h5>
+            <input type="text" name="subject" placeholder="Sujet" required />
+            <h5>Votre message</h5>
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Comment pouvons nous vous aider?"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">
+              Envoyer le message
+            </button>
           </form>
         </div>
       </div>
