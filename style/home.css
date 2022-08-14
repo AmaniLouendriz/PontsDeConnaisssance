@@ -21,7 +21,7 @@ nav {
   align-items: center;
 }
 /* Css for logo here */
-nav img {
+/* nav img {
   width: 150px;
   color: whitesmoke;
   font-size: 30px;
@@ -30,7 +30,7 @@ nav img {
   padding: 0 100px;
   font-weight: bold;
   font-family: "Waterfall", cursive;
-}
+} */
 .nav-links {
   flex: none;
   text-align: right;
@@ -70,21 +70,23 @@ nav ul li a {
 /* Hide the images by default and fix the dimensions and suppress scrolling */
 .my-slides {
   display: none;
-  width: 100%;
-  height: 100vh;
+  /* width: 100%;
+  height: 100vh; */
   position: relative;
   overflow: hidden;
 }
-.my-image {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
+.carousel-image-container {
+  width: 95%;
+  height: 480px;
+  /* position: absolute; */
+  margin-left: auto;
+  margin-right: auto;
   top: 0;
 }
-#slide-image {
+.carousel-image-container img {
   width: 100%;
   height: 100%;
-  animation: zoom 3s linear infinite;
+  /* animation: zoom 3s linear infinite; */
 }
 @keyframes zoom {
   0% {
@@ -102,8 +104,8 @@ nav ul li a {
 }
 /* adding the gradient to make the text more readable */
 .slider-layer {
-  width: 100%;
-  height: 100vh;
+  /* width: 100%;
+  height: 100vh; */
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   position: absolute;
   top: 0;
@@ -249,8 +251,8 @@ nav .fa {
   nav .fa {
     display: block;
     color: #fff;
-    margin: 10 px;
-    font-size: 22 px;
+    margin: 10px;
+    font-size: 22px;
     cursor: pointer;
   }
   .nav-links ul li {
