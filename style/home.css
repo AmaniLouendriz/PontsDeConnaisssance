@@ -311,12 +311,15 @@ p {
   line-height: 22px;
   padding: 10px;
 }
+
 .row {
   margin-top: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 20px;
 }
-.course-col {
+
+.course-column {
   flex-basis: 31%;
   background: rgba(168, 228, 239, 0.5);
   border-radius: 10px;
@@ -334,7 +337,7 @@ h3 {
   font-weight: 600;
   margin: 10px 0;
 }
-.course-col:hover {
+.course-column:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 700px) {
@@ -357,8 +360,11 @@ h3 {
   overflow: hidden;
 }
 .campus-col img {
-  width: 100%;
+  max-width: 100%;
   display: block;
+  border: solid #222;
+  height: auto;
+  orientation: landscape;
 }
 .layer {
   background: transparent;
@@ -388,7 +394,7 @@ h3 {
   bottom: 49%;
   opacity: 1;
 }
-/* Facilities */
+/* Facilities
 .facilities {
   width: 80%;
   margin: auto;
@@ -412,7 +418,7 @@ h3 {
   margin-top: 16px;
   margin-bottom: 15px;
   text-align: left;
-}
+} */
 /* Testimonials */
 .testimonials {
   width: 80%;
