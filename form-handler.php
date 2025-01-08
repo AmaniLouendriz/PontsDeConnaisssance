@@ -1,5 +1,9 @@
 <?php
-$name = $_POST['name'];
+ /** initializing the input variables */
+
+include 'home.html';
+
+$visitor_name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
@@ -17,9 +21,15 @@ $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email\r\n";
 
 
-mail($to,$email_subject,$email_body,$headers);
+mail($to,$email_subject,$email_body,$headers)or die("Error");
 
-header("Location:contact.html");
+// header("Location:contact.html");
+
+echo "message sent";
+
+
+
+
 
 
 
